@@ -578,7 +578,7 @@
             <input type="text" class="proxy-input" id="proxy-input" placeholder="https://thingproxy.freeboard.io/fetch/{url}" value="">
             <button class="proxy-save" onclick="saveProxy()">Save</button>
           </div>
-          <p style="margin-top:8px;font-size:11px;color:var(--text3)">Use a proxy base URL like https://thingproxy.freeboard.io/fetch/ or https://corsproxy.io/?url=. For `/fetch/` style proxies, the stream URL is appended raw, not encoded. You can also use placeholder format like https://thingproxy.freeboard.io/fetch/{url}.</p>
+          <p style="margin-top:8px;font-size:11px;color:var(--text3)">Use a proxy base URL like https://thingproxy.freeboard.io/fetch/, https://corsproxy.io/?url=, or the full direct form https://corsproxy.io/?https://example.com/api. For `/fetch/` style proxies, the stream URL is appended raw, not encoded.</p>
         </div>
       </div>
 
@@ -814,12 +814,13 @@ function loadStream(url) {
     const proxy = settings.proxy.trim();
     const proxyHasPlaceholder = proxy.includes('{url}') || proxy.includes('{{url}}');
     const proxyHasQueryUrl = proxy.includes('?url=');
-    const proxyIncludesStream = /https?:\/\/[^\/]+\/(?:https?:\/\/|https?:%2F%2F|http%3A%2F%2F|https%3A%2F%2F)/i.test(proxy);
+    const proxyHasDirectUrlAfterQuery = /\?(?:.*&)?https?:\/\//i.test(proxy);
+    const proxyIncludesStream = /(?:https?:\/\/).*?(?:https?:\/\/)/i.test(proxy);
     const proxyHasUrlParam = /url=/.test(proxy) && /https?:\/\/|https?:%2F%2F|http%3A%2F%2F|https%3A%2F%2F/.test(proxy.split(/url=/i).pop());
 
     if (proxyHasPlaceholder) {
       finalUrl = proxy.replace('{url}', encodeURIComponent(url)).replace('{{url}}', encodeURIComponent(url));
-    } else if (proxyIncludesStream || proxyHasUrlParam) {
+    } else if (proxyHasDirectUrlAfterQuery || proxyIncludesStream || proxyHasUrlParam) {
       finalUrl = proxy;
     } else if (proxyHasQueryUrl) {
       finalUrl = proxy + encodeURIComponent(url);
