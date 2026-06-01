@@ -573,15 +573,12 @@
       <div class="settings-section" id="cors-section">
         <div class="settings-section-title">CORS / Proxy Fix</div>
         <div class="cors-box">
-          <p>Many streams are blocked by browser CORS policy. Install a browser extension to bypass this, or set a custom proxy URL below.</p>
-          <a class="cors-link" href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino" target="_blank">Chrome: CORS Unblock ↗</a>
-          &nbsp;
-          <a class="cors-link" href="https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/" target="_blank" style="background:var(--surface3);color:var(--text);border:1px solid var(--border)">Firefox: CORS Everywhere ↗</a>
+          <p>Many streams are blocked by browser CORS policy. Use a proxy URL below to bypass CORS without installing a browser extension.</p>
           <div class="proxy-row">
             <input type="text" class="proxy-input" id="proxy-input" placeholder="https://corsproxy.io/?url=" value="">
             <button class="proxy-save" onclick="saveProxy()">Save</button>
           </div>
-          <p style="margin-top:8px;font-size:11px;color:var(--text3)">Proxy URL will be prepended to stream URLs. Leave empty to disable.</p>
+          <p style="margin-top:8px;font-size:11px;color:var(--text3)">Proxy URL is prepended to stream URLs. Leave empty to disable. Example: https://corsproxy.io/?url=</p>
         </div>
       </div>
 
