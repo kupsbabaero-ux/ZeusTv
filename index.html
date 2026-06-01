@@ -812,24 +812,20 @@ function loadStream(url) {
   let finalUrl = url;
   if (settings.proxy) {
     const proxy = settings.proxy.trim();
-    const isPlaceholderProxy = proxy.includes('{url}') || proxy.includes('{{url}}');
-    const isQueryProxy = proxy.includes('?url=');
-    const isPathFetchProxy = /\/fetch\/?$/.test(proxy);
+    const proxyHasPlaceholder = proxy.includes('{url}') || proxy.includes('{{url}}');
+    const proxyHasQueryUrl = proxy.includes('?url=');
+    const proxyIncludesStream = /https?:\/\/[^\/]+\/(?:https?:\/\/|https?:%2F%2F|http%3A%2F%2F|https%3A%2F%2F)/i.test(proxy);
+    const proxyHasUrlParam = /url=/.test(proxy) && /https?:\/\/|https?:%2F%2F|http%3A%2F%2F|https%3A%2F%2F/.test(proxy.split(/url=/i).pop());
 
-    if (isPlaceholderProxy) {
+    if (proxyHasPlaceholder) {
       finalUrl = proxy.replace('{url}', encodeURIComponent(url)).replace('{{url}}', encodeURIComponent(url));
-    } else if (isQueryProxy) {
-      finalUrl = proxy.includes('=' + encodeURIComponent(url)) ? proxy : proxy + encodeURIComponent(url);
-    } else if (isPathFetchProxy) {
-      finalUrl = proxy + url;
+    } else if (proxyIncludesStream || proxyHasUrlParam) {
+      finalUrl = proxy;
+    } else if (proxyHasQueryUrl) {
+      finalUrl = proxy + encodeURIComponent(url);
     } else {
-      const proxyIncludesStream = /https?:\/\/[^\/]+\/(?:https?:\/\/|https?:%2F%2F|http%3A%2F%2F|https%3A%2F%2F)/i.test(proxy);
-      const proxyHasUrlParam = /url=/.test(proxy) && /https?:\/\/|https?:%2F%2F|http%3A%2F%2F|https%3A%2F%2F/.test(proxy.split(/url=/i).pop());
-      if (proxyIncludesStream || proxyHasUrlParam) {
-        finalUrl = proxy;
-      } else {
-        finalUrl = proxy + encodeURIComponent(url);
-      }
+      const rawProxy = proxy.endsWith('/') ? proxy : proxy + '/';
+      finalUrl = rawProxy + url;
     }
   }
 
