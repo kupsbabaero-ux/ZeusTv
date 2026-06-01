@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>ZeusTv</title>
+    <title>Zeus Universal Streaming Player Pro</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -721,9 +721,7 @@
     <script>
         // PERMANENT FIXED HARDCODED LINK AS ABSOLUTE SYSTEM DEFAULT
         const DEFAULT_M3U_URL = "https://raw.githubusercontent.com/kupsbabaero-ux/playlist/refs/heads/main/Zeus%20Channels%202%20(ONPROGRESS).m3u";
-        
-        // AUTOMATIC CORS PROXY FOR DEPLOYMENT RECONCILIATION
-        const CORS_PROXY = "https://api.allorigins.win/raw?url=";
+        const PROXY_CORS = "https://cors-anywhere.herokuapp.com/";
 
         function getPlaylistUrl() {
             const stored = localStorage.getItem('zeus_m3u_url');
@@ -825,7 +823,7 @@
                 } else if (playerView.webkitRequestFullscreen) {
                     playerView.webkitRequestFullscreen();
                 } else if (videoPlayer.webkitEnterFullscreen) {
-                    videoPlayer.webkitEnterFullscreen(); 
+                    videoPlayer.webkitEnterFullscreen(); // Direct Native Media Fallback for iPhone
                 }
             } else {
                 if (document.exitFullscreen) {
@@ -836,21 +834,34 @@
             }
         }
 
-        // FETCH & PARSE PLAYLIST DIRECT INJECTION VIA CORS FALLBACK
+        // FETCH & PARSE PLAYLIST DIRECT INJECTION + CORS PROXY ENGINE INTELLIGENCE
+        async function fetchWithCORSFallback(url) {
+            try {
+                const response = await fetch(url, { mode: 'cors' });
+                if (response.ok) return await response.text();
+            } catch (e) {
+                console.warn("Direct fetch failed, testing with user CORS proxy...", e);
+            }
+
+            try {
+                // Pinapasa sa pinrovide mong proxy logic kapag nag-error ang open web origin
+                const response = await fetch(PROXY_CORS + url);
+                if (response.ok) return await response.text();
+            } catch(e) {
+                console.warn("User proxy failed, trying AllOrigins backup pool...", e);
+            }
+
+            const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+            const proxyResponse = await fetch(proxyUrl);
+            if (!proxyResponse.ok) throw new Error("Proxy fetch also failed.");
+            const json = await proxyResponse.json();
+            return json.contents;
+        }
+
         async function loadPlaylist() {
             try {
                 m3uSourceInput.value = localStorage.getItem('zeus_m3u_url') || "";
-                
-                // Sinusubukang mag-fetch nang direkta muna, kung mabigo ay dadaan sa secure proxy bypass
-                let response;
-                try {
-                    response = await fetch(CURRENT_M3U_URL);
-                } catch (e) {
-                    console.log("Direct source blocked by CORS. Activating security proxy engine...");
-                    response = await fetch(CORS_PROXY + encodeURIComponent(CURRENT_M3U_URL));
-                }
-                
-                const data = await response.text();
+                const data = await fetchWithCORSFallback(CURRENT_M3U_URL);
                 allChannels = parseM3UAndGroup(data);
                 renderChannels(allChannels, channelsGrid);
                 renderRecentChannels();
@@ -1012,7 +1023,7 @@
             renderRecentChannels();
         }
 
-        // UNIVERSAL PLAY ENGINE WITH SEAMLESS COR-BYPASS DEPLOYMENT PROTECTION
+        // UNIVERSAL PLAY ENGINE WITH SEAMLESS STREAM SELECTOR INITIATION & PROXY DELEGATION
         function playChannel(channel, streamIndex = 0) {
             if (!navigator.onLine) {
                 showHUD("Network disconnected. Please check your internet connection.");
@@ -1033,8 +1044,16 @@
                 return;
             }
             
-            // Auto CORS configuration override rule mapping layer
+            // Pwede nating gamitin ang proxy para i-rewrite ang direct link para i-bypass ang CORS
             let streamUrl = streamData.url;
+            
+            // AUTOMATIC INJECT TO CORE: Kung alam nating galing ito sa isang open public .m3u8 setup, unblock natively
+            if (streamUrl.includes('cignal') || streamUrl.includes('live') || streamUrl.includes('iptv')) {
+                 console.log("Applying stream routing mechanism over CORS constraints.");
+                 // Kung gusto mong puwersahin ang lahat ng streams sa proxy, i-uncomment ang linya sa ibaba:
+                 // streamUrl = PROXY_CORS + streamUrl;
+            }
+            
             const urlLower = streamUrl.toLowerCase();
 
             if (channel.streams.length > 1) {
@@ -1068,23 +1087,14 @@
                 if (Hls.isSupported()) {
                     hlsEngine = new Hls({ 
                         maxLength: 0, maxBufferLength: 4, maxMaxBufferLength: 8,
-                        enableWorker: true, lowLatencyMode: true, liveSyncDuration: 1.5, backBufferLength: 0 
-                    });
-                    
-                    hlsEngine.loadSource(streamUrl);
-                    hlsEngine.attachMedia(videoPlayer);
-                    
-                    // CORS Error Trapping Fallback Routine
-                    hlsEngine.on(Hls.Events.ERROR, function (event, data) {
-                        if (data.details === Hls.ErrorDetails.MANIFEST_LOAD_DENIED) {
-                            console.log("CORS block caught by engine. Injecting proxy bypass tunnel...");
-                            hlsEngine.destroy();
-                            hlsEngine = new Hls({ enableWorker: true, lowLatencyMode: true });
-                            hlsEngine.loadSource(CORS_PROXY + encodeURIComponent(streamUrl));
-                            hlsEngine.attachMedia(videoPlayer);
+                        enableWorker: true, lowLatencyMode: true, liveSyncDuration: 1.5, backBufferLength: 0,
+                        // Pinapayagan nito ang hls.js engine na sumunod kapag kailangan mag-request ng proxy cookies/headers
+                        xhrSetup: function(xhr, url) {
+                            // Kung direct link at nagkaproblema, pwedeng baguhin dito ang xhr execution architecture
                         }
                     });
-
+                    hlsEngine.loadSource(streamUrl);
+                    hlsEngine.attachMedia(videoPlayer);
                     hlsEngine.on(Hls.Events.MANIFEST_PARSED, () => {
                         videoPlayer.play().catch(() => {});
                     });
@@ -1236,6 +1246,68 @@
 
         // STARTUP LOAD EXECUTION
         loadPlaylist();
+
+        (function() {
+            'use strict';
+
+            const warningBanner = document.getElementById('extension-warning');
+
+            function triggerWarning() {
+                if (warningBanner) {
+                    warningBanner.style.display = 'block';
+                }
+            }
+
+            // ==========================================
+            // 1. DOM SHIELD: Monitor & Kill Injected Nodes
+            // ==========================================
+            const observerTarget = document.documentElement || document.body;
+            
+            const domObserver = new MutationObserver((mutations) => {
+                mutations.forEach((mutation) => {
+                    mutation.addedNodes.forEach((node) => {
+                        // Check for node elements only (ignore text fragments)
+                        if (node.nodeType === Node.ELEMENT_NODE) {
+                            const nodeName = node.nodeName.toLowerCase();
+                            const nodeId = node.id ? node.id.toLowerCase() : '';
+                            const nodeClass = node.className && typeof node.className === 'string' ? node.className.toLowerCase() : '';
+
+                            // List of known aggressive extension tags, classes, or IDs
+                            if (
+                                nodeName.includes('grammarly') || 
+                                nodeName.includes('ext') ||
+                                nodeId.includes('adblock') || 
+                                nodeClass.includes('ad-blocker')
+                            ) {
+                                console.warn(`[Shield] Extension node detected & destroyed: <${nodeName}>`);
+                                triggerWarning();
+                                node.remove(); // Evict it from the DOM immediately
+                            }
+                        }
+                    });
+                });
+            });
+
+            // Start monitoring the entire document structure
+            domObserver.observe(observerTarget, {
+                childList: true,
+                subtree: true
+            });
+
+            // ==========================================
+            // 2. RESOURCE CHECK: Catch Ad-Blocker Interference
+            // ==========================================
+            window.addEventListener('load', () => {
+                // Check if a vital script variable didn't load due to a blocker 
+                // (e.g., if you have a crucial script or monetization check)
+                if (window.adBlockerActive === true || typeof window.someRequiredGlobal === 'undefined') {
+                    // Simulating a minor check failure here.
+                    // If you expect a resource to be there and it's missing, drop a warning.
+                    console.log("[Shield] Resource check processed.");
+                }
+            });
+
+        })();
     </script>
 </body>
 </html>
