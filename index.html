@@ -578,7 +578,7 @@
             <input type="text" class="proxy-input" id="proxy-input" placeholder="https://corsproxy.io/?url=" value="">
             <button class="proxy-save" onclick="saveProxy()">Save</button>
           </div>
-          <p style="margin-top:8px;font-size:11px;color:var(--text3)">Enter a proxy base URL like https://corsproxy.io/?url= or a full encoded proxy URL. Leave empty to disable.</p>
+          <p style="margin-top:8px;font-size:11px;color:var(--text3)">Enter a proxy base URL like https://corsproxy.io/?url= or a full proxy URL with an existing url= parameter. Leave empty to disable.</p>
         </div>
       </div>
 
@@ -813,7 +813,12 @@ function loadStream(url) {
   if (settings.proxy) {
     const proxy = settings.proxy.trim();
     const proxyAlreadyIncludesStream = /https?:\/\/[^\/]+\/(?:https?:\/\/|https?:%2F%2F|http%3A%2F%2F|https%3A%2F%2F)/i.test(proxy);
-    finalUrl = proxyAlreadyIncludesStream ? proxy : proxy + encodeURIComponent(url);
+    const proxyHasUrlParam = /url=/.test(proxy) && /https?:\/\/|https?:%2F%2F|http%3A%2F%2F|https%3A%2F%2F/.test(proxy.split(/url=/i).pop());
+    if (proxyAlreadyIncludesStream || proxyHasUrlParam) {
+      finalUrl = proxy;
+    } else {
+      finalUrl = proxy + encodeURIComponent(url);
+    }
   }
 
   if (url.endsWith('.mpd') || url.includes('manifest.mpd')) {
