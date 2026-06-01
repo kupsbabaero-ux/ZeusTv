@@ -578,7 +578,7 @@
             <input type="text" class="proxy-input" id="proxy-input" placeholder="https://thingproxy.freeboard.io/fetch/{url}" value="">
             <button class="proxy-save" onclick="saveProxy()">Save</button>
           </div>
-          <p style="margin-top:8px;font-size:11px;color:var(--text3)">Use a proxy base URL like https://thingproxy.freeboard.io/fetch/ or https://corsproxy.io/?url=. You can also use a placeholder format such as https://thingproxy.freeboard.io/fetch/{url}. Do not paste a sample placeholder URL with https://example.com unless you replace it with the actual stream URL.</p>
+          <p style="margin-top:8px;font-size:11px;color:var(--text3)">Use a proxy base URL like https://thingproxy.freeboard.io/fetch/ or https://corsproxy.io/?url=. For `/fetch/` style proxies, the stream URL is appended raw, not encoded. You can also use placeholder format like https://thingproxy.freeboard.io/fetch/{url}.</p>
         </div>
       </div>
 
@@ -812,10 +812,16 @@ function loadStream(url) {
   let finalUrl = url;
   if (settings.proxy) {
     const proxy = settings.proxy.trim();
-    if (proxy.includes('{url}') || proxy.includes('{{url}}')) {
+    const isPlaceholderProxy = proxy.includes('{url}') || proxy.includes('{{url}}');
+    const isQueryProxy = proxy.includes('?url=');
+    const isPathFetchProxy = /\/fetch\/?$/.test(proxy);
+
+    if (isPlaceholderProxy) {
       finalUrl = proxy.replace('{url}', encodeURIComponent(url)).replace('{{url}}', encodeURIComponent(url));
-    } else if (/https?:\/\/[^\/]+\/https?:\/\/example\.com/i.test(proxy)) {
-      finalUrl = proxy.replace(/https?:\/\/example\.com(?:\/.*)?/i, url);
+    } else if (isQueryProxy) {
+      finalUrl = proxy.includes('=' + encodeURIComponent(url)) ? proxy : proxy + encodeURIComponent(url);
+    } else if (isPathFetchProxy) {
+      finalUrl = proxy + url;
     } else {
       const proxyIncludesStream = /https?:\/\/[^\/]+\/(?:https?:\/\/|https?:%2F%2F|http%3A%2F%2F|https%3A%2F%2F)/i.test(proxy);
       const proxyHasUrlParam = /url=/.test(proxy) && /https?:\/\/|https?:%2F%2F|http%3A%2F%2F|https%3A%2F%2F/.test(proxy.split(/url=/i).pop());
