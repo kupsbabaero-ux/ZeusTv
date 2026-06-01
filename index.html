@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Zeus Universal Streaming Player Pro</title>
+    <title>ZeusTv</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -720,8 +720,11 @@
 
     <script>
         // PERMANENT FIXED HARDCODED LINK AS ABSOLUTE SYSTEM DEFAULT
-        const DEFAULT_M3U_URL = "https://raw.githubusercontent.com/kupsbabaero-ux/playlist/main/Zeus%20Channels%202%20(ONPROGRESS).m3u";
+        const DEFAULT_M3U_URL = "https://raw.githubusercontent.com/kupsbabaero-ux/playlist/refs/heads/main/Zeus%20Channels%202%20(ONPROGRESS).m3u";
         
+        // AUTOMATIC CORS PROXY FOR DEPLOYMENT RECONCILIATION
+        const CORS_PROXY = "https://api.allorigins.win/raw?url=";
+
         function getPlaylistUrl() {
             const stored = localStorage.getItem('zeus_m3u_url');
             if (stored && stored.trim() !== "") return stored.trim();
@@ -822,7 +825,7 @@
                 } else if (playerView.webkitRequestFullscreen) {
                     playerView.webkitRequestFullscreen();
                 } else if (videoPlayer.webkitEnterFullscreen) {
-                    videoPlayer.webkitEnterFullscreen(); // Direct Native Media Fallback for iPhone
+                    videoPlayer.webkitEnterFullscreen(); 
                 }
             } else {
                 if (document.exitFullscreen) {
@@ -833,72 +836,27 @@
             }
         }
 
-        // FETCH & PARSE PLAYLIST
-        async function fetchWithCORSFallback(url) {
-            // 1. Try direct fetch (works for GitHub raw & CORS-enabled servers)
-            try {
-                const response = await fetch(url);
-                if (response.ok) {
-                    const text = await response.text();
-                    if (text && text.trim().length > 0) return text;
-                }
-            } catch (e) {
-                console.warn("Direct fetch failed:", e);
-            }
-
-            // 2. AllOrigins proxy fallback
-            try {
-                const resp = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}`);
-                if (resp.ok) {
-                    const json = await resp.json();
-                    if (json.contents && json.contents.trim().length > 0) return json.contents;
-                }
-            } catch (e) {
-                console.warn("AllOrigins proxy failed:", e);
-            }
-
-            // 3. corsproxy.io fallback
-            try {
-                const resp = await fetch(`https://corsproxy.io/?${encodeURIComponent(url)}`);
-                if (resp.ok) {
-                    const text = await resp.text();
-                    if (text && text.trim().length > 0) return text;
-                }
-            } catch (e) {
-                console.warn("corsproxy.io failed:", e);
-            }
-
-            throw new Error("All fetch methods failed");
-        }
-
+        // FETCH & PARSE PLAYLIST DIRECT INJECTION VIA CORS FALLBACK
         async function loadPlaylist() {
             try {
                 m3uSourceInput.value = localStorage.getItem('zeus_m3u_url') || "";
-                console.log("Loading playlist from:", CURRENT_M3U_URL);
-                const data = await fetchWithCORSFallback(CURRENT_M3U_URL);
-                console.log("Playlist data received, parsing...");
-                allChannels = parseM3UAndGroup(data);
-                console.log("Parsed channels:", allChannels.length);
-                if (allChannels.length === 0) {
-                    channelsGrid.innerHTML = `<p style="padding: 20px; color: var(--accent-color)">No channels found in M3U file. Check if the file is valid.</p>`;
-                } else {
-                    renderChannels(allChannels, channelsGrid);
-                    renderRecentChannels();
+                
+                // Sinusubukang mag-fetch nang direkta muna, kung mabigo ay dadaan sa secure proxy bypass
+                let response;
+                try {
+                    response = await fetch(CURRENT_M3U_URL);
+                } catch (e) {
+                    console.log("Direct source blocked by CORS. Activating security proxy engine...");
+                    response = await fetch(CORS_PROXY + encodeURIComponent(CURRENT_M3U_URL));
                 }
+                
+                const data = await response.text();
+                allChannels = parseM3UAndGroup(data);
+                renderChannels(allChannels, channelsGrid);
+                renderRecentChannels();
             } catch (error) {
                 console.error("Playlist Error:", error);
-                channelsGrid.innerHTML = `<p style="padding: 20px; color: var(--accent-color)">⚠️ Error loading playlist. Trying direct fetch...</p>`;
-                // Attempt direct fetch as last resort
-                try {
-                    const directResponse = await fetch(CURRENT_M3U_URL);
-                    const directData = await directResponse.text();
-                    allChannels = parseM3UAndGroup(directData);
-                    renderChannels(allChannels, channelsGrid);
-                    renderRecentChannels();
-                } catch (e) {
-                    console.error("Direct fetch also failed:", e);
-                    channelsGrid.innerHTML = `<p style="padding: 20px; color: var(--accent-color)">❌ Error loading playlist. Check your internet connection and M3U URL.</p>`;
-                }
+                channelsGrid.innerHTML = `<p style="padding: 20px; color: var(--accent-color)">Error loading your playlist securely. Check your network connection.</p>`;
             }
         }
 
@@ -1054,7 +1012,7 @@
             renderRecentChannels();
         }
 
-        // UNIVERSAL PLAY ENGINE WITH SEAMLESS STREAM SELECTOR INITIATION
+        // UNIVERSAL PLAY ENGINE WITH SEAMLESS COR-BYPASS DEPLOYMENT PROTECTION
         function playChannel(channel, streamIndex = 0) {
             if (!navigator.onLine) {
                 showHUD("Network disconnected. Please check your internet connection.");
@@ -1075,7 +1033,8 @@
                 return;
             }
             
-            const streamUrl = streamData.url;
+            // Auto CORS configuration override rule mapping layer
+            let streamUrl = streamData.url;
             const urlLower = streamUrl.toLowerCase();
 
             if (channel.streams.length > 1) {
@@ -1111,8 +1070,21 @@
                         maxLength: 0, maxBufferLength: 4, maxMaxBufferLength: 8,
                         enableWorker: true, lowLatencyMode: true, liveSyncDuration: 1.5, backBufferLength: 0 
                     });
+                    
                     hlsEngine.loadSource(streamUrl);
                     hlsEngine.attachMedia(videoPlayer);
+                    
+                    // CORS Error Trapping Fallback Routine
+                    hlsEngine.on(Hls.Events.ERROR, function (event, data) {
+                        if (data.details === Hls.ErrorDetails.MANIFEST_LOAD_DENIED) {
+                            console.log("CORS block caught by engine. Injecting proxy bypass tunnel...");
+                            hlsEngine.destroy();
+                            hlsEngine = new Hls({ enableWorker: true, lowLatencyMode: true });
+                            hlsEngine.loadSource(CORS_PROXY + encodeURIComponent(streamUrl));
+                            hlsEngine.attachMedia(videoPlayer);
+                        }
+                    });
+
                     hlsEngine.on(Hls.Events.MANIFEST_PARSED, () => {
                         videoPlayer.play().catch(() => {});
                     });
