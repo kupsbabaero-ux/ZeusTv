@@ -1170,9 +1170,6 @@ http://23.237.104.106:8080/USA_YES_NETWORK/index.m3u8
 #EXTINF:-1 group-title="Anime" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/20/Yu-Gi-Oh%21_II.svg/revision/latest/scale-to-width-down/1000?cb=20241009162017", Yu-Gi-Oh!
 https://amg01796-amg01796c19-rakuten-gb-7486.playouts.now.amagi.tv/ts-eu-w1-n2/playlist/amg01796-fastmediafast-yugioh2en-rakutengb/cb543d1f796c678e9dd43e6fd1ef44a4f9591fde1d6988693eb5518975d1073edce2a59caa08ff16388f1ede7f0a66413a3e951fda77118fd87eb141453c5728cfffe729a2c05616b7db083429b56a062a866a68ac39437ed0e21f48a238b6720a5aa82a66443d80b846ac7255db80148b61299bce8c37683f03409a5e5afba358b1ebb50e11de38f3e04d55912f17b19f43c8821da6d2d10ac85ed774f0179b97a3de851786d5f30393728aecdb5f581fa9a83bf8f955bfd6937929957f2d556c3a8cc1b2cd3ef702da21269cded8b664857384e977c308a3d871cfa6a5300f3be729dec2322b2fed817c6173cfe5486826efc8a184f2393287ab9ac8e6f07c6690fa1879089c238862630f99f3cf1b93d055b88263d4e4274d6380a64c95cbe6d8afa8db1ed565ebd7e49438754b612f0b9212f7c93a957a8b38e0e53b15716108ed965ccf83997935614489c91ef71b09b6d68ecc8e5a6c8430550aa6309968046acd266533b07eaed46f3afb5360ef0234f55c3a9751bce97c87c0f5d1466ae5909738bc05899205ddf10eac174c7a0aa1fd215a05013de7e768093f6ed00783f7cff27c1d0ffcfdaeaf9306d866ccbd81a3ed23e24b2210c572ed25770d8bed9991da/135/426x240_511680/index.m3u8
 
-#EXTINF:-1 group-title="Anime" tvg-logo="", SA vs NY
-https://emilyzooije054.s3.us-east-1.amazonaws.com/btsport_720p30.m3u8
-
 #EXTINF:-1 tvg-id="ZNation.pl@SD" tvg-logo="https://images-1.rakuten.tv/storage/global-live-channel/translation/artwork/dff3a92e-c4aa-49c4-b1b6-4a847428b8d5-width200-quality90.png" group-title="Entertainment",Z Nation
 https://d39g1vxj2ef6in.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-rakuten-stitched/master.m3u8?ads.xumo_channelId=88883098
 
