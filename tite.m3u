@@ -1,7 +1,13 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="" group-title="Movies", SAS vs NYK 
+#EXTINF:-1 tvg-logo="" group-title="Movies", SAS vs NYK (NBA)
 https://live-pull.w02uat.com/live/LIV852476502344265728.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Movies", SAS vs NYK 2 (NBA)
+http://stream.cammonitorplus.net/1782/index.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Movies", SAS vs NYK 2 (NBA)
+http://stream.cammonitorplus.net/1770/index.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Movies", 3rsCartoonMovies
 https://live20.bozztv.com/giatvplayout7/giatv-211507/tracks-v1a1/mono.ts.m3u8
