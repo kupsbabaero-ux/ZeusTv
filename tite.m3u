@@ -1,7 +1,5 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="" group-title="Movies", GAGO YARN?
-
 #EXTINF:-1 tvg-logo="" group-title="Movies", 3rsCartoonMovies
 https://live20.bozztv.com/giatvplayout7/giatv-211507/tracks-v1a1/mono.ts.m3u8
 
@@ -266,6 +264,9 @@ https://lotus.stingray.com/manifest/cmusic-cme004-montreal/samsungtvplus/master.
 #EXTINF:-1 group-title="Foods" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/0a/Cooking_Channel_HD.png/revision/latest?cb=20250612173952", Cooking Channel
 http://23.237.104.106:8080/USA_COOKING/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_kRfWyjdR2Y27pRPoGxqXu8Y9LCjY5BikidbVXp3SM17VE=s900-c-k-c0x00ffffff-no-rj" group-title="Foods", CottageLife
+http://185.246.209.113/CottageLife/index.m3u8
+
 #EXTINF:-1 group-title="Entertainment" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/9/98/Craftsy.svg/revision/latest?cb=20170815204839", Craftsy
 https://linear-492.frequency.stream/dist/stirr/492/hls/master/playlist_640x360.m3u8
 
@@ -470,9 +471,6 @@ https://streams2.sofast.tv/WiseM3U8_28/sofast/cleanhls/master.m3u8
 #EXTINF:-1 tvg-id="HopeChannelPhilippines.ph@SD" tvg-logo="https://i.imgur.com/LB2vmMt.png" group-title="Local",Hope Channel Philippines
 https://jstre.am/live/jsl:7A1swL7Fhlh.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/d7/The_HORRO%D0%AF_Channel.png/revision/latest?cb=20100401091116" group-title="Entertainment",Horror TV
-https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/93dc292b-cbcf-4988-ab97-94feced4c14b/manifest.m3u8
-
 #EXTINF:-1 tvg-id="hotwheels" group-title="Kids" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/7a/Hot_Wheels.svg/revision/latest/scale-to-width-down/300?cb=20211007204408", HotWheel's Action
 https://dtz4aepbew7ez.cloudfront.net/hotwh.m3u8
 
@@ -620,6 +618,9 @@ https://amg00627-amg00627c40-rakuten-uk-5725.playouts.now.amagi.tv/ts-eu-w1-n2/p
 #EXTINF:-1 tvg-id="" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/b5/MSG_Network.png/revision/latest?cb=20200129201807" group-title="Entertainment", MSG
 http://23.237.104.106:8080/USA_MSG/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/25/MSNBC_1996.svg/revision/latest?cb=20180308102320" group-title="News", MSNBC
+http://185.246.209.113/MSNBC/tracks-v1a1/mono.m3u8
+
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/1280px-MTV_2021_%28brand_version%29.svg.png" group-title="Sports", MTV
 http://23.237.104.106:8080/USA_MTV/index.m3u8?takodachi
 
@@ -745,9 +746,6 @@ https://jmp2.uk/plu-5f7790b3ed0c88000720b241.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/russel/images/5/5a/One_Sports_%28TV_channel%29_3D_Logo_2020.png/revision/latest?cb=20230520142737" group-title="Sports",One Sports
 http://136.239.158.18:6610/001/2/ch00000090990000001083/index.m3u8?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BpiZhzOAmsfItUIS2UHXxD0ytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001173&contentid=ch00000000000000001173&videoid=ch00000090990000001083&recommendtype=0&userid=1797679327850&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=RCAJM4IFILAXXX&NeedJITP=1&JITPMediaType=HLS&JITPDRMType=NO
-
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/russel/images/5/5a/One_Sports_%28TV_channel%29_3D_Logo_2020.png/revision/latest?cb=20230520142737" group-title="Sports",One Sports
-http://136.239.158.18:6610/001/2/ch00000090990000001083/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BpiZhzOAmsfItUIS2UHXxD0ytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001173&contentid=ch00000000000000001173&videoid=ch00000090990000001083&recommendtype=0&userid=1797679327850&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=RCAJM4IFILAXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
 
 #EXTINF:-1 tvg-id="Outdoor Channel" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/a1/OC_Logo2017_Primary_2_%281%29.svg/revision/latest?cb=20170428060035" group-title="Entertainment",Outdoor Channel
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00718-outdoorchannela-outdoortvnz-samsungnz/playlist.m3u8
@@ -890,6 +888,30 @@ http://23.237.104.106:8080/USA_SHOWTIME_FAMILY/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://iyadtv.pages.dev/images/sinemanila_231.png" group-title="Entertainment", Sinemanila
 https://live20.bozztv.com/giatv/giatv-sinemanila/sinemanila/chunks.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4c/Sky_Arts_2026_II.png/revision/latest/scale-to-width-down/250?cb=20260211151729" group-title="Entertainment", SkyArts
+http://185.246.209.113/SkyArts/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/7/78/Sky_Atlantic_2026_Stacked_Logo.png" group-title="Entertainment", SkyAtlantic
+http://185.246.209.113/SkyAtlantic/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Sky_Crime_2026_Tile_Logo.png/250px-Sky_Crime_2026_Tile_Logo.png" group-title="Entertainment", SkyCrime
+http://185.246.209.113/SkyCrime/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/0/0d/Sky_Documentaries_2026_Tile_Logo.png" group-title="Entertainment", SkyDocumentaries
+http://185.246.209.113/SkyDocumentaries/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0c/Sky-sports-main-action.jpg" group-title="Sports", SkySportsAction
+http://185.246.209.113/SkySportsAction/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsvdclX7KrynjQ1-VOHm3S3RCZzTayQnYE2w&s" group-title="Sports", SkySportsCricket
+http://185.246.209.113/SkySportsCricket/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/1951064391937294338/z__sgVBz_400x400.jpg" group-title="Sports", SkySportsGolf
+http://185.246.209.113/SkySportsGolf/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/2dsSm5m.png" group-title="Sports", SkySportsPremierLeague
+http://185.246.209.113/SkySportsPremierLeague/tracks-v1a1/mono.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/01/Solar_Sports_2016_logo.png" group-title="Local", Solar Sports
 http://136.239.159.20:6610/001/2/ch00000090990000001081/sec-f2-v1-a1.m3u8?JITPDRMType=NO&IASHttpSessionId=OTT50164020260525065500074400&AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMApTfGIKxFqRM2tu30PzY%2FKksyK4TH4mOENKJ45mwOyS0g%3D%3D&m3u8_level=2&virtualDomain=001.live_hls.zte.com&ispcode=55&ztecid=ch00000090990000001081
 
@@ -955,6 +977,9 @@ https://rightsboosterltd-scl-1-nl.samsung.wurl.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/fb/Syfy_%282017%29.svg/revision/latest/scale-to-width-down/300?cb=20171210093256" group-title="Movies", SYFY
 http://23.237.104.106:8080/USA_SYFY/index.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Entertainment", T+E
+http://185.246.209.113/T+E/index.m3u8
 
 #EXTINF:-1 tvg-id="Tagalized Movie Channel" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/27/Tmc2021logo.png/revision/latest/scale-to-width-down/250?cb=20240612121607" group-title="Local",Tagalized Movie Channel
 http://136.239.159.20:6610/001/2/ch00000090990000001080/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BrHx%2Fyl86rMkFVqtHp1NtQIytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001153&contentid=ch00000000000000001153&videoid=ch00000090990000001080&recommendtype=0&userid=1123674387331&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=OWFM2G9EILPXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
