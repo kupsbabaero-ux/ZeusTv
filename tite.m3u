@@ -373,7 +373,7 @@ https://amg15905-k20-amg15905c4-rlaxx-us-8703.playouts.now.amagi.tv/ts-us-w2-n2/
 http://41.205.93.154/FOXBUSINESS/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/ff/FOX.svg/revision/latest?cb=20170519102706" group-title="Entertainment", Fox East
-https://cignalplaymaxphcorner.vwgsalvador.workers.dev/fox_east/cplaymax/tracks-v1a1/mono.m3u8
+http://41.205.93.154/FOX49/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-id="FOX LIVE"  tvg-logo="https://static.foxnews.com/foxnews.com/content/uploads/2022/09/Fox-News-Live.png" group-title="News", Fox Live
 https://fox-foxnewsnow-vizio.amagi.tv/playlist.m3u8
@@ -388,7 +388,7 @@ https://d1jzu95oc8fgt3.cloudfront.net/FOX_Sports.m3u8
 https://d1jzu95oc8fgt3.cloudfront.net/FOX_Sports1080p.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/ff/FOX.svg/revision/latest?cb=20170519102706" group-title="Entertainment", Fox West
-https://cignalplaymaxphcorner.vwgsalvador.workers.dev/fox_west/cplaymax/tracks-v1a1/mono.m3u8
+http://84.17.50.102/fox/tracks-v1a1/mono.ts.m3u8
 
 #EXTINF:-1 group-title="Sports" tvg-logo="https://www.adadarters.com/wp-content/uploads/2020/10/FTF_White.png", FTF Sports (HD)
 https://1657061170.rsc.cdn77.org/HLS/FTF-LINEAR_v2.m3u8
@@ -522,11 +522,18 @@ https://d2z0ysa6dgxhlc.cloudfront.net/kchan.m3u8
 #EXTINF:-1 tvg-name="KBS 2" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/south-korea/kbs-kr.png" group-title="Korea",KBS 2
 http://136.239.158.10:6610/001/2/ch00000090990000001344/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMApysTfm9HUYOIUKeEg06TC92%2FjHNuou2Jtxin49X3LQKw%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001831&contentid=ch00000000000000001831&videoid=ch00000090990000001344&recommendtype=0&userid=1777990310694&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=C8PY4MIU51HXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20448120260101155242039879&ispcode=55
 
+#EXTINF:-1 tvg-name="KBS 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/KBS_DRAMA.svg/3840px-KBS_DRAMA.svg.png" group-title="Korea", KBS Drama
+https://kbsndrama.gscdn.kbs.co.kr/kbsndrama-02/kbsndrama-02_sd.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9rYnNuZHJhbWEuZ3NjZG4ua2JzLmNvLmtyL2tic25kcmFtYS0wMi8qIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzgxNDI4MzI1fX19XX0_&Key-Pair-Id=APKAICDSGT3Y7IXGJ3TA&Signature=LhtLlE3NkUOhmIAuPLzfFhTZbyjTwxRg0yNmOHabmqV4Mqlrxz0wzsYZ2WYAu3VGeViqBPhtMKhMxXBytVC1am4rp8zTshtWsaZiTaFGiMJLKZxw35l0jKREgZrkTUSK6jP5Z26koX23ZEon3TUJ06HEKsHvuGoM2ay41zQwRzRCKGLFf5DuFofs8W9px7x0xI2a7inSLZm61LN5WsLT~-XjyHFdrY1kmB6EqHYkTe4LCWy3LY8H0APjOaHqyygO23Fu4BaUrFb3fm5tXrBbgRD48zC5SyFjw4ZycjtI~mWBZAumxZIgzMUV1geFOLKRbE~Jxqn13olkiBak6UCHhg__
+
+#EXTINF:-1 tvg-name="KBS 2" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/ae/KBS_Life_logo_%282021-present%29.svg/revision/latest?cb=20210626135721" group-title="Korea",KBS Life
+https://kbsnlife.gscdn.kbs.co.kr/kbsnlife-01/kbsnlife-01_sd.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9rYnNubGlmZS5nc2Nkbi5rYnMuY28ua3Iva2JzbmxpZmUtMDEvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4MTQyODA2NH19fV19&Key-Pair-Id=APKAICDSGT3Y7IXGJ3TA&Signature=SYSFe~NbmVcY9DMG8hQKyiqUVBr9dYBjHokreDh66JMSPgokXsv20SajLE3t4xp4LX8~6WAQGnSTYHJh486~MLeq8h9jbPC8US~H05-vdTWhYMUdu9dxJnZYw5cr8LOcRRU62buLnPI9bcdSWpAoB7yy2-FGVbd4sFk~pUZ0Oe4B2PdNyK5EwbCO-jwumJlilviDvPXT~pFqfnY-e5IYdQY1padJK9PozELso3rzNIjbez1IyKn53~R9qolWGBxtOp7Ww5TV11CA0w-MEJX7ip72kOqwrB0LPmutJJUngxTUw8pYFz8f4QIcBugCH8lz9IPk2iQhVQ0tA5CvfOaP4w__
+
 #EXTINF:-1 group-title="Korea" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2e/Korean_Broadcasting_System-text_only.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original", KBS World
 https://liveh12.vtvprime.vn/hls/KBS/03.m3u8
 
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjrxyZu1bPiJ3SdGvhVf3d3Muj5AqQ7ZkGpw&s" group-title="Korea",KBS World
-https://world.gscdn.kbs.co.kr/world-02/world-02_sd.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly93b3JsZC5nc2Nkbi5rYnMuY28ua3Ivd29ybGQtMDIvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4MTQyNzA2OX19fV19&Key-Pair-Id=APKAICDSGT3Y7IXGJ3TA&Signature=m4BziBpGlXjBaYet-XFWTTpjxXdPtVCLkKWmM8alo2lIxn1PjKCk~LIJOcifQUULUESzGFuSxHtOgF2WehsDDt33GjN39va71VgFiEpSkAtBgOz8R~QvGRWmjrIbRJ1m-qPB6yRfLAMhjuYkgMd9WDlJzKgoPTlbDtGctFvSJ10OyXG9FeYA54p55VJcsD8J5lblukNbEkG95Qi8QljZcHfnqKazfiA3E2Naw6-kcgo80Fip~ZdOgLoabfzm8Wv4xCtwFGLfahJU-Do-6Ik1WUrBBeqbLj9iKa1ywBs8esYiKi~tCk1J2pDLqwhkRVtmavfy7Ad-vayCjkZnRiZLQw__
+https://world.gscdn.kbs.co.kr/world-02/world-02_sd.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly93b3JsZC5nc2Nkbi5rYnMuY28ua3Ivd29ybGQtMDIvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc4MTQyNzkxNn19fV19&Key-Pair-Id=APKAICDSGT3Y7IXGJ3TA&Signature=TNaCRn18Qk~8W~fDdrObkGJyLWcrgjo8gQbuBO5CQ~DyGz7q3FIpVhOFccy5681~r6RNgr~zcQVls1l7b9-gorNRjX3QEnxSXA6AOAlYBd1BiTqO7E7LAxILFyLJqEYN3eElB-gzVWHLnRi1wjqY3V31P~bUFtqDrCLv4PZ0ETO2~ToLbF3NDlucMX6yWExTzAkBiEvIcBjXc1jgyny46-vGdOCMF2UWNY65kD146-xDl0dyCOolXEPaOgrYt05mbnIkKXEf00m9EoY-IOJoBWLEPf-NE5hAH3-oBaxIZE6eyNivnXN9kWbznbgbd1~R7MGcRHrgGABYTgSfCH09oA__
+
 #EXTINF:-1 tvg-id="KidsFlix.us@SD" tvg-logo="https://i.imgur.com/4Pn0ADQ.png" group-title="Kids",KidsFlix
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
 
@@ -1024,6 +1031,9 @@ https://cgplaymaxcigcon.vwgsalvador.workers.dev/tap_silog/cplaymax/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Tastemade.us@US" tvg-logo="https://i.imgur.com/xP7Ehn8.png" group-title="Foods",Tastemade
 https://rakutenaa-tm-intl-aus-rakuten-eu-n1gtg.amagi.tv/playlist/rakutenAA-tm-intl-aus-rakuten-eu/playlist.m3u8
+
+#EXTINF:-1 tvg-name="KBS 2" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/9/99/TBS_logo_2020.svg/revision/latest?cb=20210527072201" group-title="Korea", TBS
+https://cdntv.tbs.seoul.kr/tbs/_definst_/tbs_tv_web_360.smil/chunklist_b414000.m3u8
 
 #EXTINF:-1 group-title="Entertainment" tvg-logo="https://res.cloudinary.com/usopc-prod/image/upload/v1/TeamUSA%20Assets/Assets/Logo-main-teamUSA_xdtsfd?_a=DAJKG5E+ZAA0", Team Usa Tv
 https://brandusa-gousa-1-be.samsung.wurl.tv/3000.m3u8
