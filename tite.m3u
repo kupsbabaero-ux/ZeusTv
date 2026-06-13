@@ -1,8 +1,5 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-logo="" group-title="Movies", HBO TEST
-http://restream-live.realiptv.to:8080/Z3nXfkOnf0/Madt8rUvmN/51551
-
 #EXTINF:-1 tvg-logo="" group-title="Movies", 3rsCartoonMovies
 https://live20.bozztv.com/giatvplayout7/giatv-211507/tracks-v1a1/mono.ts.m3u8
 
@@ -297,6 +294,9 @@ http://136.239.158.10:6610/001/2/ch00000090990000001340/manifest.mpd?AuthInfo=v8
 #EXTINF:-1 group-title="Entertainment" tvg-logo="", Discovery Asia
 https://cdn3.skygo.mn/live/disk1/Discovery_Asia/HLSv3-FTA/Discovery_Asia-avc1_3000000=67-mp4a_256000_eng=12.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/48/DisneyJr3Dver.png/revision/latest?cb=20240601030018" group-title="Kids", Disney Channel
+http://s.rocketdns.info:8080/live/monstercable/Dq6jjknxCr/2591.ts
+
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/48/DisneyJr3Dver.png/revision/latest?cb=20240601030018" group-title="Kids", Disney Jr.
 http://84.17.50.102/disneyjunior/index.m3u8
 
@@ -392,9 +392,6 @@ https://d1jzu95oc8fgt3.cloudfront.net/FOX_Sports1080p.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/ff/FOX.svg/revision/latest?cb=20170519102706" group-title="Entertainment", Fox West
 http://84.17.50.102/fox/tracks-v1a1/mono.ts.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/ff/FOX.svg/revision/latest?cb=20170519102706" group-title="Entertainment", Fox Test
-http://restream-live.realiptv.to:8080/Z3nXfkOnf0/Madt8rUvmN/89885
 
 #EXTINF:-1 group-title="Sports" tvg-logo="https://www.adadarters.com/wp-content/uploads/2020/10/FTF_White.png", FTF Sports (HD)
 https://1657061170.rsc.cdn77.org/HLS/FTF-LINEAR_v2.m3u8
@@ -654,8 +651,8 @@ http://136.158.97.2:6610/001/2/ch00000090990000001252/index.m3u8?AuthInfo=v87HD9
 #EXTINF:-1 tvg-id="Naruto.us@US"  tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Naruto_logo.svg/3840px-Naruto_logo.svg.png group-title="Anime",Naruto
 https://jmp2.uk/plu-5da0c85bd2c9c10009370984.m3u8
 
-#EXTINF:-1 tvg-id="99951383" tvg-name="The NBA Channel" tvg-logo="https://image.xumo.com/v1/channels/channel/99951383/168x168.png?type=color_onBlack" group-title="Sports", NBA TV
-http://84.17.50.102/nbatv/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-id="99951383" tvg-name="The NBA Channel" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnukUjWgFK6ob_VaFitkMKcEuWV6V6Tcn6UA&s" group-title="Sports", NBA
+http://38.49.128.38:8000/play/a0kj/index.m3u8
 
 #EXTINF:-1 tvg-id="99951383" tvg-name="The NBA Channel" tvg-logo="https://image.xumo.com/v1/channels/channel/99951383/168x168.png?type=color_onBlack" group-title="Sports", NBA TV
 http://23.237.104.106:8080/USA_NBA/tracks-v1a1/mono.m3u8
@@ -683,6 +680,12 @@ https://d1si3n1st4nkgb.cloudfront.net/10502/88896001/hls/master.m3u8?ads.xumo_ch
 
 #EXTINF:-1 tvg-id="99951383" tvg-name="The NBA Channel" tvg-logo="https://image.xumo.com/v1/channels/channel/99951383/168x168.png?type=color_onBlack" group-title="Sports", NBC on ESPN
 http://41.205.64.66/NBC/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-name="NBC Sports Boston" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s49198_dark_360w_270h.png" group-title="Sports",NBC Sports Boston
+http://s.rocketdns.info:8080/live/monstercable/Dq6jjknxCr/2435.ts
+
+#EXTINF:-1 tvg-name="NBC Sports California" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s45540_dark_360w_270h.png" group-title="TV",NBC Sports California
+http://stream.cammonitorplus.net/1795/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-id="NBC Sports NOW (1080p)" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/6b/NBC_Sports_Now_logo.svg/revision/latest?cb=20250814101947" group-title="Sports", NBC Sports NOW
 https://d1m1xk35ma8qfl.cloudfront.net/master.m3u8
@@ -954,6 +957,9 @@ https://eb9a3a62.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/T05P
 #EXTINF:-1 group-title="Sports" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/bd/SPORTSGRID_LOGO_BLACK_RED_LOGO.svg/revision/latest/scale-to-width-down/1000?cb=20250821124400", SportsGrid
 https://sportsgrid-tribal.amagi.tv/playlist.m3u8
 
+#EXTINF:-1 tvg-name="Sportsnet East" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s62109_dark_360w_270h.png" group-title="TV",Sportsnet East
+http://s.rocketdns.info:8080/live/monstercable/Dq6jjknxCr/3072.ts
+
 #EXTINF:-1 tvg-name="STAR 1" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/star-channel-us.png" group-title="Movies", Star 1
 http://136.239.173.10:6610/001/2/ch00000090990000001202/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAo5DOWlb1sl%2Btaq5YYAtO9QsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001421&contentid=ch00000000000000001421&videoid=ch00000090990000001202&recommendtype=0&userid=1215773067669&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=RX498RVAIHMXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20446220260101155239280448&ispcode=55
 
@@ -1100,6 +1106,12 @@ https://amg01076-lightningintern-traceurban-xiaomi-m78n3.amagi.tv/ts-us-e2-n1/pl
 
 #EXTINF:-1 tvg-id="kpop" group-title="Korea" tvg-logo="https://www.travelonbags.com/on/demandware.static/Sites-travelonbags-Site/-/default/dw341ef56c/images/logo-new.svg", TravelOmn
 https://amg15905-k20-amg15905c3-lg-au-5401.playouts.now.amagi.tv/playlist/amg15905-mediacan-travelon-lgau/playlist.m3u8?ads.deviceid=[DEVICE_ID]&ads.ifa=[IFA]&ads.ifatype=[IFA_TYPE]&ads.lat=[LMT]&ads.donotsell=[DNS]&ads.ua=[UA]&ads.ip=[IP]&ads.gdpr=[GDPR]&ads.gdprconsent=[GDPR_CONSENT]&ads.country=[COUNTRY]&ads.usprivacy=[US_PRIVACY]&ads.appstoreurl=[APP_STOREURL]&ads.bundleid=[APP_BUNDLE]&ads.appname=[APP_NAME]&ads.appversion=[APP_VERSION]&ads.devicetype=[DEVICE_TYPE]&ads.devicemake=[DEVICE_MAKE]&ads.devicemodel=[DEVICE_MODEL]&ads.targetad=[TARGETAD_ALLOWED]
+
+#EXTINF:-1 tvg-name="TSN1" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11182_dark_360w_270h.png" group-title="TV",TSN1
+http://s.rocketdns.info:8080/live/monstercable/Dq6jjknxCr/3146.ts
+
+#EXTINF:-1 tvg-name="TSN1" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11182_dark_360w_270h.png" group-title="TV",TSN2
+http://s.rocketdns.info:8080/live/monstercable/Dq6jjknxCr/3145.ts
 
 #EXTINF:-1 tvg-id="TV Maria" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/29/Maria_TV.png/revision/latest?cb=20200414213815" group-title="Local",TV Maria
 http://136.158.97.2:6610/001/2/ch00000090990000001160/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BqJiJmfV%2B93mjmGGmqynSohytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001374&contentid=ch00000000000000001374&videoid=ch00000090990000001160&recommendtype=0&userid=1605694488407&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=G669IAJA55PXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
