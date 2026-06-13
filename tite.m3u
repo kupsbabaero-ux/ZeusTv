@@ -390,6 +390,9 @@ https://d1jzu95oc8fgt3.cloudfront.net/FOX_Sports1080p.m3u8
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/ff/FOX.svg/revision/latest?cb=20170519102706" group-title="Entertainment", Fox West
 http://84.17.50.102/fox/tracks-v1a1/mono.ts.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/ff/FOX.svg/revision/latest?cb=20170519102706" group-title="Entertainment", Fox Test
+http://restream-live.realiptv.to:8080/Z3nXfkOnf0/Madt8rUvmN/89885
+
 #EXTINF:-1 group-title="Sports" tvg-logo="https://www.adadarters.com/wp-content/uploads/2020/10/FTF_White.png", FTF Sports (HD)
 https://1657061170.rsc.cdn77.org/HLS/FTF-LINEAR_v2.m3u8
 
