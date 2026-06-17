@@ -204,9 +204,6 @@ https://cignalplaymaxphcorner.vwgsalvador.workers.dev/cbs_west/cplaymax/tracks-v
 #EXTINF:-1 tvg-id="cinelife" group-title="Local" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/79/1500364185_cinemo-web.jpg/revision/latest?cb=20171125051830", Cine Mo!
 https://d1bail49udbz1k.cloudfront.net/out/v1/78e282e04f0944f3ad0aa1db7a1be645/index_3.m3u8
 
-#EXTINF:-1 tvg-id="cinelife" group-title="Local" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/79/1500364185_cinemo-web.jpg/revision/latest?cb=20171125051830", Cine Mo! 2
-http://136.239.158.30:6610/001/2/ch00000090990000001254/sec-f2-v1-a1.m3u8?JITPDRMType=NO&IASHttpSessionId=OTT86583520260525072954096065&AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMApP1%2FTBq4G4yW%2Bysf7XC2GUsyK4TH4mOENKJ45mwOyS0g%3D%3D&m3u8_level=2&virtualDomain=001.live_hls.zte.com&ispcode=55&ztecid=ch00000090990000001254
-
 #EXTINF:-1 tvg-name="CINEMA ONE" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/cinema-one-ph.png" group-title="Movies", CInema One PH
 http://136.239.158.10:6610/001/2/ch00000090990000001283/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAr2cQyuTRlDkHeiqeVidUqqsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001548&contentid=ch00000000000000001548&videoid=ch00000090990000001283&recommendtype=0&userid=1481102669463&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=7TIMXILHNX5XXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20445520260101155240041967&ispcode=55
 
