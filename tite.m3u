@@ -184,9 +184,6 @@ https://live20.bozztv.com/giatv/giatv-cartoonchannelph/cartoonchannelph/chunks.m
 http://23.237.104.106:8080/USA_CARTOON_NETWORK/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/ee/Cartoon_Network_2010.svg/revision/latest?cb=20210726224754" group-title="Kids", Cartoon Network
-http://138.121.15.230:9001/CARTOON-NETWORK/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/ee/Cartoon_Network_2010.svg/revision/latest?cb=20210726224754" group-title="Kids", Cartoon Network
 https://cdn4.skygo.mn/live/disk1/Cartoon_Network/HLSv3-FTA/Cartoon_Network-avc1_3000000=12-mp4a_256000_eng=6.m3u8
 
 #EXTINF:-1 tvg-id="Cartoonito" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/Cartoonito_logo_2021.svg/revision/latest/scale-to-width-down/300?cb=20211112214721" group-title="Kids",Cartoonito
