@@ -27,9 +27,6 @@ http://136.158.97.2:6610/001/2/ch00000090990000001087/manifest.mpd?AuthInfo=v87H
 #EXTINF:-1 tvg-id="AbanteTV.ph@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d9/Abante_masthead.svg" group-title="Local",Abante TV
 https://amg19223-amg19223c12-amgplt0352.playout.now3.amagi.tv/playlist/amg19223-amg19223c12-amgplt0352/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Vevo" group-title="News" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/7b/ABC_News2021.svg/revision/latest?cb=20210810023448", ABC HD
-http://8an4dgnb.megatv.fun/iptv/8XFKA8883W9M5K/1087/index.m3u8
-
 #EXTINF:-1 tvg-id="Vevo" group-title="News" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/7b/ABC_News2021.svg/revision/latest?cb=20210810023448", ABC News
 https://abc-news-dmd-streams-1.akamaized.net/out/v1/701126012d044971b3fa89406a440133/index.m3u8
 
@@ -165,11 +162,11 @@ https://30a-tv.com/feeds/720p/54.m3u8
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/kmbpmock/images/2/27/CCPh_Mod_2025.png/revision/latest?cb=20260111134656" group-title="Kids", Cartoon Channel PH
 https://live20.bozztv.com/giatv/giatv-cartoonchannelph/cartoonchannelph/chunks.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/ee/Cartoon_Network_2010.svg/revision/latest?cb=20210726224754" group-title="Kids", Cartoon Network USA
-http://23.237.104.106:8080/USA_CARTOON_NETWORK/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/ee/Cartoon_Network_2010.svg/revision/latest?cb=20210726224754" group-title="Kids", Cartoon Network Asia
 https://cdn4.skygo.mn/live/disk1/Cartoon_Network/HLSv3-FTA/Cartoon_Network.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/ee/Cartoon_Network_2010.svg/revision/latest?cb=20210726224754" group-title="Kids", Cartoon Network USA
+http://23.237.104.106:8080/USA_CARTOON_NETWORK/index.m3u8
 
 #EXTINF:-1 tvg-id="Cartoonito" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/6/67/Cartoonito_logo_2021.svg/revision/latest/scale-to-width-down/300?cb=20211112214721" group-title="Kids",Cartoonito
 http://161.49.17.2:6610/001/2/ch00000090990000001125/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BoZQDeIq8A03ROpfeWN75MYytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001238&contentid=ch00000000000000001238&videoid=ch00000090990000001125&recommendtype=0&userid=1642489849443&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=9X3U5ZPDLQVXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
@@ -624,6 +621,9 @@ http://38.49.128.38:8000/play/a0kj/index.m3u8
 #EXTINF:-1 tvg-id="99951383" tvg-name="The NBA Channel" tvg-logo="https://image.xumo.com/v1/channels/channel/99951383/168x168.png?type=color_onBlack" group-title="Sports", NBA TV
 http://23.237.104.106:8080/USA_NBA/tracks-v1a1/mono.m3u8
 
+#EXTINF:-1 tvg-logo="https://media.nbcchicago.com/2024/08/WMAQ_station_logo_dark.png?fit=274%2C58&quality=85&strip=all&w=378&h=80" group-title="News", NBC 5 Chicago Live News
+https://media.nbcchicago.com/2024/08/WMAQ_station_logo_dark.png?fit=274%2C58&quality=85&strip=all&w=378&h=80
+
 #EXTINF:-1 tvg-id="99951383" tvg-name="The NBA Channel" tvg-logo="https://image.xumo.com/v1/channels/channel/99951383/168x168.png?type=color_onBlack" group-title="Sports", NBC Channel
 http://41.205.64.66/NBC/index.m3u8
 
@@ -641,6 +641,9 @@ https://dn7vkzd5khpp3.cloudfront.net/master.m3u8
 
 #EXTINF:-1 tvg-id="NBCNewsNOW.us@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/de/NBC_News_Now_2023.svg/revision/latest?cb=20250124160436" group-title="News",NBC News NOW
 https://d1si3n1st4nkgb.cloudfront.net/10502/88896001/hls/master.m3u8?ads.xumo_channelId=88896001
+
+#EXTINF:-1 tvg-logo="" group-title="News", NBC News Now
+https://livehub-voidnet.onrender.com/cluster/streamcore/us/NBC_REDIS.m3u8
 
 #EXTINF:-1 tvg-id="99951383" tvg-name="The NBA Channel" tvg-logo="https://image.xumo.com/v1/channels/channel/99951383/168x168.png?type=color_onBlack" group-title="Sports", NBC on ESPN
 http://41.205.64.66/NBC/tracks-v1a1/mono.m3u8
@@ -1088,6 +1091,9 @@ http://136.239.173.2:6610/001/2/ch00000090990000001080/manifest.mpd?AuthInfo=v87
 
 #EXTINF:-1 tvg-id="btsports" group-title="Sports" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/83/TNT_Sports_%282023%29.svg/revision/latest?cb=20230407001905", TNT East
 http://84.17.50.102/tnt/index.m3u8
+
+#EXTINF:-1 tvg-id="btsports" group-title="Sports" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/8/83/TNT_Sports_%282023%29.svg/revision/latest?cb=20230407001905", TNT Sports 1
+http://192.129.159.196:8020/watch/9ab7e7d2-a517-4162-92de-ddeb433bb0da/server1.m3u8
 
 #EXTINF:-1 tvg-id="TomAndJerry.do@HD" tvg-logo="https://gia.tv/streams/pptv/208314.jpg?1750373428" group-title="Kids",Tom And Jerry
 https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8
