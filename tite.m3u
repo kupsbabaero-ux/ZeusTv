@@ -406,7 +406,7 @@ https://1657061170.rsc.cdn77.org/HLS/FTF-LINEAR_v2.m3u8
 http://23.237.104.106:8080/USA_FX/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e0/FXM_-_Movies_from_Fox.svg/revision/latest?cb=20180412013244" group-title="Movies", FXM
-http://s1.dnspass.xyz:80/live/xdovrlnx/4uNxYix155/34669.m3u8
+http://restream-live.realiptv.to:8080/live/monstercable/Dq6jjknxCr/2497.ts
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/30/FXX.svg/revision/latest?cb=20161008111050" group-title="Movies", FXX
 http://23.237.104.106:8080/USA_FXX/index.m3u8
@@ -1059,8 +1059,11 @@ https://cdntv.tbs.seoul.kr/tbs/_definst_/tbs_tv_web_360.smil/chunklist_b414000.m
 #EXTINF:-1 group-title="Entertainment" tvg-logo="https://res.cloudinary.com/usopc-prod/image/upload/v1/TeamUSA%20Assets/Assets/Logo-main-teamUSA_xdtsfd?_a=DAJKG5E+ZAA0", Team Usa Tv
 https://brandusa-gousa-1-be.samsung.wurl.tv/3000.m3u8
 
-#EXTINF:-1 group-title="Kids" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/55/TeenNick_logo_2023.svg", TeenNick
-https://trs1.aynaott.com/teennick/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 group-title="Kids" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/55/TeenNick_logo_2023.svg", TeenNick East
+http://103.205.133.70/teennick/index.m3u8
+
+#EXTINF:-1 group-title="Kids" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/55/TeenNick_logo_2023.svg", TeenNick West
+http://restream-live.realiptv.to:8080/live/monstercable/Dq6jjknxCr/631834.ts
 
 #EXTINF:-1 tvg-id="TheChatShowChannel.uk@SD" tvg-logo="" group-title="Entertainment",The Chat Show Channel
 https://amg00426-littledotstudio-thechatshow-samsungse-n39q0.amagi.tv/playlist/amg00426-littledotstudio-thechatshow-samsungse/playlist.m3u8
