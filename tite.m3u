@@ -42,9 +42,6 @@ https://install.akctvcontrol.com/speed/broadcast/140/file-3128k.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://alcgroup.com.ph/assets/aliw-BZGJRcY-.png" group-title="Local", Aliw23
 http://136.239.158.30:6610/001/2/ch00000090990000001109/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAp%2BWYKp0pXQLOnfpLMLHi2tsyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001234&contentid=ch00000000000000001234&videoid=ch00000090990000001109&recommendtype=0&userid=1860238582120&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=6WO7AWCG0YYXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20448120260101155238039836&ispcode=55
 
-#EXTINF:-1 tvg-id="" tvg-logo="https://images.squarespace-cdn.com/content/v1/63a49c652619a84a20769d93/3d3acbcf-5b20-43fc-8b2b-14bde303a697/Aliwko_logo.png" group-title="Local", AliwKo
-https://1nox1-adobo.hf.space/arayko.m3u8
-
 #EXTINF:-1 tvg-id="" tvg-logo="https://abcplus.hooplakidz.com/assets/images/logo.png" group-title="Kids",All Babies Channel
 https://d390zi2w1jc4t4.cloudfront.net/master.m3u8
 
