@@ -954,6 +954,9 @@ https://eb9a3a62.wurl.com/manifest/f36d25e7e52f1ba8d7e56eb859c636563214f541/T05P
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/2e/Sport_TV1_%282023%29.svg" group-title="Sports", Sport Tv1
 https://1nyaler.streamhostingcdn.top/stream/33/index.m3u8?Billybobs.shit.dont.stink!
 
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/20/Sport_TV2_%282023%29.svg" group-title="Sports", Sport Tv2
+https://1nyaler.streamhostingcdn.top/stream/34/index.m3u8?Billybobs.shit.dont.stink!
+
 #EXTINF:-1 group-title="Sports" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/bd/SPORTSGRID_LOGO_BLACK_RED_LOGO.svg/revision/latest/scale-to-width-down/1000?cb=20250821124400", SportsGrid
 https://sportsgrid-tribal.amagi.tv/playlist.m3u8
 
