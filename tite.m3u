@@ -153,6 +153,9 @@ https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
 #EXTINF:-1 tvg-id="BBCKids.us@SD" tvg-logo="" group-title="Sports", Bein Sports 2
 http://33a28853.cbilant.com/iptv/HVGN6PEPMAXGE2R9NS99WXG4/31048/index.m3u8
 
+#EXTINF:-1 tvg-id="BBCKids.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/5/51/BeIN_Sports_Canada.png" group-title="Sports", Bein Sports Canada
+https://1nyaler.streamhostingcdn.top/stream/31/index.m3u8?Billybobs.shit.dont.stink!
+
 #EXTINF:-1 tvg-id="BBCKids.us@SD" tvg-logo="" group-title="Sports", Bein Sports Xtra
 https://aka-live1050.delivery.roku.com/948b987e-5b69-4f1a-853a-5d62eeef2e1b/t2-origin/out/v1/live_720.m3u8
 
@@ -453,8 +456,11 @@ http://s.rocketdns.info:8080/live/monstercable/Dq6jjknxCr/2492.ts
 #EXTINF:-1 tvg-id="" tvg-logo="https://static.wikia.nocookie.net/russel/images/b/b8/Hallypop_Logo_2020.png/revision/latest/scale-to-width-down/1200?cb=20221229002424" group-title="Local", Hallypop
 http://136.158.97.2:6610/001/2/ch00000090990000001152/sec-f2-v1-a1.m3u8?JITPDRMType=NO&IASHttpSessionId=OTT379224520260525071217099436&AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMArQQqEzMGzqacd7xs%2FVYEXbsyK4TH4mOENKJ45mwOyS0g%3D%3D&m3u8_level=2&virtualDomain=001.live_hls.zte.com&ispcode=55&ztecid=ch00000090990000001152
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/de/Hbo_2.png" group-title="Movies", HBO 2
-http://23.237.104.106:8080/USA_HBO2/index.m3u8?takodachi
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/de/Hbo_2.png" group-title="Movies", HBO 2 East
+http://23.237.104.106:8080/USA_HBO2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/de/Hbo_2.png" group-title="Movies", HBO 2 West
+http://restream-live.realiptv.to:8080/live/monstercable/Dq6jjknxCr/553461.ts
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c1/HBO.svg/revision/latest?cb=20250930051253" group-title="Movies", HBO Asia
 http://136.239.173.2:6610/001/2/ch00000090990000001065/sec-f2-v1-a1.m3u8?JITPDRMType=NO&IASHttpSessionId=OTT119760720260531041941102475&AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAosKg8aLji3LHWqHUI%2FwQyJsyK4TH4mOENKJ45mwOyS0g%3D%3D&m3u8_level=2&virtualDomain=001.live_hls.zte.com&ispcode=55&ztecid=ch00000090990000001065
@@ -462,11 +468,14 @@ http://136.239.173.2:6610/001/2/ch00000090990000001065/sec-f2-v1-a1.m3u8?JITPDRM
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/d5/HBO_Zone_2000_II.svg/revision/latest?cb=20250211155501" group-title="Movies", HBO Comedy
 http://41.205.64.66/HBO-COMEDY/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c1/HBO.svg/revision/latest?cb=20250930051253" group-title="Movies", HBO East
+http://23.237.104.106:8080/USA_HBO/tracks-v1a1/mono.m3u8
+
 #EXTINF:-1 tvg-name="VIVA CINEMA" tvg-logo="" group-title="Movies", HBO SIgnature East
 http://138.59.227.20:8000/play/a06h/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c1/HBO.svg/revision/latest?cb=20250930051253" group-title="Movies", HBO USA
-http://23.237.104.106:8080/USA_HBO/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c1/HBO.svg/revision/latest?cb=20250930051253" group-title="Movies", HBO West
+http://restream-live.realiptv.to:8080/live/monstercable/Dq6jjknxCr/2490.ts
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/d5/HBO_Zone_2000_II.svg/revision/latest?cb=20250211155501" group-title="Movies", HBO ZONE
 http://23.237.104.106:8080/USA_HBO_ZONE/index.m3u8
@@ -723,17 +732,26 @@ http://84.17.50.102/nickjr/index.m3u8
 #EXTINF:-1 tvg-id="ZNation.pl@SD" tvg-logo="" group-title="Kids", Nick Jr. Peppa Pig
 http://41.205.93.154/NICK-JR/index.m3u8
 
+#EXTINF:-1 tvg-id="" tvg-log"https://upload.wikimedia.org/wikipedia/commons/b/bf/Nickjr-logo.png" group-title="Kids",Nick Jr. West
+http://restream-live.realiptv.to:8080/live/monstercable/Dq6jjknxCr/631832.ts
+
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/e/e0/Nick_Pluto.jpg/revision/latest/scale-to-width-down/1000?cb=20240423015350" group-title="Kids", Nick Pluto Tv
 https://jmp2.uk/plu-5ca673e0d0bd6c2689c94ce3.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/07/Nickelodeon_%282009%29.svg/revision/latest?cb=20180306141612" group-title="Kids", Nickelodeon
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/07/Nickelodeon_%282009%29.svg/revision/latest?cb=20180306141612" group-title="Kids", Nickelodeon East
 http://23.237.104.106:8080/USA_NICKELODEON/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/07/Nickelodeon_%282009%29.svg/revision/latest?cb=20180306141612" group-title="Kids", Nickelodeon West
+http://restream-live.realiptv.to:8080/live/monstercable/Dq6jjknxCr/631831.ts
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/be/Nicktoons_Logo_2023.svg" group-title="Kids",NickToons
 https://jmp2.uk/plu-654ca7f92c1d3300086b608c.m3u8
 
 #EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/be/Nicktoons_Logo_2023.svg" group-title="Kids",NickToons East
 http://84.17.50.102/nicktoons/index.m3u8
+
+#EXTINF:-1 tvg-id="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/be/Nicktoons_Logo_2023.svg" group-title="Kids",NickToons West
+http://restream-live.realiptv.to:8080/live/monstercable/Dq6jjknxCr/631833.ts
 
 #EXTINF:-1 tvg-id="NudgeSportsChannel.ph@HD" tvg-logo="https://i.imgur.com/TW0hapZ.png" group-title="Sports",Nudge Sports Channel
 https://streams.comclark.com/live_input/nudge_sports/playlist.m3u8
