@@ -54,7 +54,7 @@
   <channel site="epgshare01.online" site_id="PH1#H2.HD.ph" lang="en" xmltv_id="">H2 HD</channel>
   <channel site="epgshare01.online" site_id="PH1#HBO.FAMILY.HD.ph" lang="en" xmltv_id="">HBO FAMILY HD</channel>
   <channel site="epgshare01.online" site_id="PH1#HBO.FAMILY.ph" lang="en" xmltv_id="">HBO FAMILY</channel>
-  <channel site="epgshare01.online" site_id="PH1#HBO.HD.ph" lang="en" xmltv_id="">HBO HD</channel>
+  <channel site="epgshare01.online" site_id="PH1#HBO.HD.ph" lang="en" xmltv_id="hbo.hd">HBO HD</channel>
   <channel site="epgshare01.online" site_id="PH1#HBO.HITS.HD.ph" lang="en" xmltv_id="">HBO HITS HD</channel>
   <channel site="epgshare01.online" site_id="PH1#HBO.HITS.ph" lang="en" xmltv_id="">HBO HITS</channel>
   <channel site="epgshare01.online" site_id="PH1#HBO.ph" lang="en" xmltv_id="">HBO</channel>
