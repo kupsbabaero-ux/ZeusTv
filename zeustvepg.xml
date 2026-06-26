@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="epgshare01.online" site_id="PH1#A2Z.ph" lang="en" xmltv_id="a2z">A2Z</channel>
+  <channel site="epgshare01.online" site_id="PH1#A2Z.ph" lang="en" xmltv_id="A2Z.ph">A2Z</channel>
   <channel site="epgshare01.online" site_id="PH1#ANC.HD.ph" lang="en" xmltv_id="">ANC HD</channel>
   <channel site="epgshare01.online" site_id="PH1#ANC.ph" lang="en" xmltv_id="">ANC</channel>
   <channel site="epgshare01.online" site_id="PH1#ANIMAL.PLANET.HD.ph" lang="en" xmltv_id="">ANIMAL PLANET HD</channel>
@@ -14,20 +14,20 @@
   <channel site="epgshare01.online" site_id="PH1#BABY.FIRST.ph" lang="en" xmltv_id="">BABY FIRST</channel>
   <channel site="epgshare01.online" site_id="PH1#BABY.TV.ph" lang="en" xmltv_id="">BABY TV</channel>
   <channel site="epgshare01.online" site_id="PH1#BBC.WORLD.NEWS.ph" lang="en" xmltv_id="">BBC WORLD NEWS</channel>
-  <channel site="epgshare01.online" site_id="PH1#BEIN.SPORTS.1.HD.ph" lang="en" xmltv_id="bein1">BEIN SPORTS 1 HD</channel>
-  <channel site="epgshare01.online" site_id="PH1#BEIN.SPORTS.2.HD.ph" lang="en" xmltv_id="bein2">BEIN SPORTS 2 HD</channel>
-  <channel site="epgshare01.online" site_id="PH1#BEIN.SPORTS.3.HD.ph" lang="en" xmltv_id="bein3">BEIN SPORTS 3 HD</channel>
+  <channel site="epgshare01.online" site_id="PH1#BEIN.SPORTS.1.HD.ph" lang="en" xmltv_id="">BEIN SPORTS 1 HD</channel>
+  <channel site="epgshare01.online" site_id="PH1#BEIN.SPORTS.2.HD.ph" lang="en" xmltv_id="">BEIN SPORTS 2 HD</channel>
+  <channel site="epgshare01.online" site_id="PH1#BEIN.SPORTS.3.HD.ph" lang="en" xmltv_id="">BEIN SPORTS 3 HD</channel>
   <channel site="epgshare01.online" site_id="PH1#BLOOMBERG.ph" lang="en" xmltv_id="">BLOOMBERG</channel>
   <channel site="epgshare01.online" site_id="PH1#BOOMERANG.ph" lang="en" xmltv_id="">BOOMERANG</channel>
   <channel site="epgshare01.online" site_id="PH1#CARTOON.NETWORK.HD.ph" lang="en" xmltv_id="">CARTOON NETWORK HD</channel>
-  <channel site="epgshare01.online" site_id="PH1#CARTOON.NETWORK.ph" lang="en" xmltv_id="cartoonnet">CARTOON NETWORK</channel>
-  <channel site="epgshare01.online" site_id="PH1#CELESTIAL.CLASSIC.MOVIES.ph" lang="en" xmltv_id="ccmpinoy">CELESTIAL CLASSIC MOVIES</channel>
+  <channel site="epgshare01.online" site_id="PH1#CARTOON.NETWORK.ph" lang="en" xmltv_id="">CARTOON NETWORK</channel>
+  <channel site="epgshare01.online" site_id="PH1#CELESTIAL.CLASSIC.MOVIES.ph" lang="en" xmltv_id="">CELESTIAL CLASSIC MOVIES</channel>
   <channel site="epgshare01.online" site_id="PH1#CHANNEL.NEWS.ASIA.ph" lang="en" xmltv_id="">CHANNEL NEWS ASIA</channel>
-  <channel site="epgshare01.online" site_id="PH1#CINEMA.ONE.ph" lang="en" xmltv_id="one">CINEMA ONE</channel>
+  <channel site="epgshare01.online" site_id="PH1#CINEMA.ONE.ph" lang="en" xmltv_id="">CINEMA ONE</channel>
   <channel site="epgshare01.online" site_id="PH1#CINEMA.WORLD.HD.ph" lang="en" xmltv_id="">CINEMA WORLD HD</channel>
   <channel site="epgshare01.online" site_id="PH1#CINEMAX.HD.ph" lang="en" xmltv_id="">CINEMAX HD</channel>
   <channel site="epgshare01.online" site_id="PH1#CINEMAX.ph" lang="en" xmltv_id="">CINEMAX</channel>
-  <channel site="epgshare01.online" site_id="PH1#CINEMO!.ph" lang="en" xmltv_id="cinemo">CINEMO!</channel>
+  <channel site="epgshare01.online" site_id="PH1#CINEMO!.ph" lang="en" xmltv_id="">CINEMO!</channel>
   <channel site="epgshare01.online" site_id="PH1#CNN.HD.ph" lang="en" xmltv_id="">CNN HD</channel>
   <channel site="epgshare01.online" site_id="PH1#CNN.ph" lang="en" xmltv_id="">CNN</channel>
   <channel site="epgshare01.online" site_id="PH1#CRIME.&amp;.INVESTIGATION.HD.ph" lang="en" xmltv_id="">CRIME &amp;amp; INVESTIGATION HD</channel>
