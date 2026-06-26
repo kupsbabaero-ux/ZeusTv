@@ -1,5 +1,35 @@
 #EXTM3U
 
+#EXTINF:0 CUID="" tvg-name="ZooMoo" tvg-logo="https://icon2.cleanpng.com/lnd/20241222/aa/6326ffc5f7b2f0b1f78b8b015bfcb9.webp" group-title="Kids 24/7", 24/7 Adventure Time
+http://restream-live.realiptv.to:8080/monstercable/Dq6jjknxCr/511209
+
+#EXTINF:0 CUID="" tvg-name="ZooMoo" tvg-logo="https://images.seeklogo.com/logo-png/1/2/ben10-logo-png_seeklogo-18292.png" group-title="Kids 24/7", 24/7 Ben 10
+http://restream-live.realiptv.to:8080/monstercable/Dq6jjknxCr/511266
+
+#EXTINF:0 CUID="" tvg-name="ZooMoo" tvg-logo="https://images.seeklogo.com/logo-png/38/1/bugs-bunny-logo-png_seeklogo-384669.png" group-title="Kids 24/7", 24/7 Bugs Bunny
+http://restream-live.realiptv.to:8080/monstercable/Dq6jjknxCr/513836
+
+#EXTINF:0 CUID="" tvg-name="ZooMoo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/Disney_logo.png" group-title="Kids 24/7", 24/7 Disney Movies 1
+http://restream-live.realiptv.to:8080/monstercable/Dq6jjknxCr/705080
+
+#EXTINF:0 CUID="" tvg-name="ZooMoo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8f/Disney_logo.png" group-title="Kids 24/7", 24/7 Disney Movies 2
+http://restream-live.realiptv.to:8080/monstercable/Dq6jjknxCr/703758
+
+#EXTINF:0 CUID="" tvg-name="ZooMoo" tvg-logo="https://i.pinimg.com/736x/df/eb/9b/dfeb9b03f713f27bac621834d676531f.jpg" group-title="Kids 24/7", 24/7 Mr Bean Animated
+http://restream-live.realiptv.to:8080/monstercable/Dq6jjknxCr/511676
+
+#EXTINF:0 CUID="" tvg-name="ZooMoo" tvg-logo="https://static.wikia.nocookie.net/pj-masks/images/4/41/Another-PJ-Masks-Logo.png/revision/latest/scale-to-width-down/250?cb=20251217152608" group-title="Kids 24/7", 24/7 Pj Masks
+http://restream-live.realiptv.to:8080/monstercable/Dq6jjknxCr/34400
+
+#EXTINF:0 CUID="" tvg-name="ZooMoo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/The_Powerpuff_Girls_logo.svg/3840px-The_Powerpuff_Girls_logo.svg.png" group-title="Kids 24/7", 24/7 Powerpuff Girls
+http://restream-live.realiptv.to:8080/monstercable/Dq6jjknxCr/40706
+
+#EXTINF:0 tvg-name="ZooMoo" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Teen_Titans_Go%21_horizontal_logo.svg/330px-Teen_Titans_Go%21_horizontal_logo.svg.png?_=20160911192335" group-title="Kids 24/7", 24/7 Teen Titans Go
+http://restream-live.realiptv.to:8080/monstercable/Dq6jjknxCr/331030
+
+#EXTINF:0 CUID="" tvg-name="ZooMoo" tvg-logo="https://1000logos.net/wp-content/uploads/2024/08/Tom-and-Jerry-Logo.png" group-title="Kids 24/7", 24/7 Tom And Jerry
+http://restream-live.realiptv.to:8080/monstercable/Dq6jjknxCr/50860
+
 #EXTINF:0 CUID="1" tvg-name="3rsCartoonMovies" group-title="Movies",3rsCartoonMovies
 https://live20.bozztv.com/giatvplayout7/giatv-211507/tracks-v1a1/mono.ts.m3u8
 
@@ -18,7 +48,7 @@ https://amg02051-amg02051c7-wisptv-us-3549.playouts.now.amagi.tv/ts-us-w2-n1/pla
 #EXTINF:0 CUID="6" tvg-name="5STARMAX" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/5/5a/5Star_Max_HD_2011.svg/revision/latest?cb=20231007140647" group-title="Movies",5STARMAX
 http://23.237.104.106:8080/USA_5STARMAX/index.m3u8?takodachi
 
-#EXTINF:0 CUID="7" tvg-name="A2Z" tvg-id="A2Z.ph" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/fa/A2Z_Channel_11_%281%29.png/revision/latest?cb=20251216061454" group-title="Local",A2Z
+#EXTINF:0 CUID="7" tvg-name="A2Z" tvg-id="307748" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/fa/A2Z_Channel_11_%281%29.png/revision/latest?cb=20251216061454" group-title="Local",A2Z
 http://136.239.173.2:6610/001/2/ch00000090990000001087/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BqHRrK8UUahwItHhKpXgPXKytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001176&contentid=ch00000000000000001176&videoid=ch00000090990000001087&recommendtype=0&userid=1287297673984&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=U4DB4Z0H2EXXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
 
 #EXTINF:0 CUID="8" tvg-name="Abante TV" tvg-id="AbanteTV.ph@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d9/Abante_masthead.svg" group-title="Local",Abante TV
@@ -225,10 +255,10 @@ http://136.239.158.18:6610/001/2/ch00000090990000001244/index.m3u8?AuthInfo=v87H
 #EXTINF:0 CUID="75" tvg-name="Celestial Movies Pinoy" tvg-logo="https://i.imgur.com/e5IZsv3.png" group-title="Movies",Celestial Movies Pinoy
 http://136.239.159.20:6610/001/2/ch00000090990000001077/index.m3u8?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BrHUpvQtyXgWxpVCozt4hcgytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001136&contentid=ch00000000000000001136&videoid=ch00000090990000001077&recommendtype=0&userid=1863800460286&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=EJ21Z5961VKXXX&NeedJITP=1&JITPMediaType=HLS&JITPDRMType=NO
 
-#EXTINF:0 CUID="76" tvg-name="Cine Mo!" tvg-id="cinelife" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/79/1500364185_cinemo-web.jpg/revision/latest?cb=20171125051830" group-title="Local",Cine Mo!
+#EXTINF:0 CUID="76" tvg-name="Cine Mo!" tvg-id="549824" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/79/1500364185_cinemo-web.jpg/revision/latest?cb=20171125051830" group-title="Local",Cine Mo!
 https://d1bail49udbz1k.cloudfront.net/out/v1/78e282e04f0944f3ad0aa1db7a1be645/index_3.m3u8
 
-#EXTINF:0 CUID="77" tvg-name="Cine Mo! 2" tvg-id="cinelife" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/79/1500364185_cinemo-web.jpg/revision/latest?cb=20171125051830" group-title="Local",Cine Mo! 2
+#EXTINF:0 CUID="77" tvg-name="Cine Mo! 2" tvg-id="549824" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/79/1500364185_cinemo-web.jpg/revision/latest?cb=20171125051830" group-title="Local",Cine Mo! 2
 http://136.239.158.30:6610/001/2/ch00000090990000001254/sec-f2-v1-a1.m3u8?JITPDRMType=NO&IASHttpSessionId=OTT86583520260525072954096065&AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMApP1%2FTBq4G4yW%2Bysf7XC2GUsyK4TH4mOENKJ45mwOyS0g%3D%3D&m3u8_level=2&virtualDomain=001.live_hls.zte.com&ispcode=55&ztecid=ch00000090990000001254
 
 #EXTINF:0 CUID="78" tvg-name="CinemaOne PH" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/66/Cinema_One_logo.png" group-title="Local",CinemaOne PH
@@ -293,6 +323,9 @@ https://cdn3.skygo.mn/live/disk1/Discovery_Asia/HLSv3-FTA/Discovery_Asia-avc1_30
 
 #EXTINF:0 CUID="98" tvg-name="Disney Channel" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s10171_dark_360w_270h.png" group-title="Kids",Disney Channel
 http://s.rocketdns.info:8080/live/monstercable/Dq6jjknxCr/2591.ts.m3u8
+
+#EXTINF:0 CUID="417" tvg-name="ZooMoo" tvg-logo="" group-title="Kids", Disney HD International
+http://103.11.0.215:8000/play/a0eq/index.m3u8
 
 #EXTINF:0 CUID="99" tvg-name="Disney Jr." tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/48/DisneyJr3Dver.png/revision/latest?cb=20240601030018" group-title="Kids",Disney Jr.
 http://84.17.50.102/disneyjunior/index.m3u8
@@ -453,7 +486,7 @@ http://23.237.104.106:8080/USA_HBO2/index.m3u8
 #EXTINF:0 CUID="154" tvg-name="HBO 2 West" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/de/Hbo_2.png" group-title="Movies",HBO 2 West
 http://restream-live.realiptv.to:8080/live/monstercable/Dq6jjknxCr/553461.ts
 
-#EXTINF:0 CUID="155" tvg-name="HBO Asia" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c1/HBO.svg/revision/latest?cb=20250930051253" group-title="Movies",HBO Asia
+#EXTINF:0 CUID="155" tvg-id="hbo.hd" tvg-name="HBO Asia" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c1/HBO.svg/revision/latest?cb=20250930051253" group-title="Movies",HBO Asia
 http://136.239.173.2:6610/001/2/ch00000090990000001065/sec-f2-v1-a1.m3u8?JITPDRMType=NO&IASHttpSessionId=OTT119760720260531041941102475&AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAosKg8aLji3LHWqHUI%2FwQyJsyK4TH4mOENKJ45mwOyS0g%3D%3D&m3u8_level=2&virtualDomain=001.live_hls.zte.com&ispcode=55&ztecid=ch00000090990000001065
 
 #EXTINF:0 CUID="156" tvg-name="HBO Comedy" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/d/d5/HBO_Zone_2000_II.svg/revision/latest?cb=20250211155501" group-title="Movies",HBO Comedy
@@ -766,7 +799,7 @@ https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est_3.m3u
 https://jukin-peopleareawesome-2-ca.samsung.wurl.tv/3000.m3u8
 
 #EXTINF:0 CUID="264" tvg-name="Peppa Pig" tvg-id="UCAOtE1V7Ots4DjM8JLlrYgg" tvg-logo="https://1000logos.net/wp-content/uploads/2023/09/Peppa-Pig-Logo.png" group-title="Kids",Peppa Pig
-https://jmp2.uk/plu-5d14fb6c84dd37df3b4290c5.m3u8
+http://restream-live.realiptv.to:8080/monstercable/Dq6jjknxCr/84703
 
 #EXTINF:0 CUID="265" tvg-name="Pinoy Xtream" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/0c/Pinoy_Extreme_logo.jpg/revision/latest?cb=20171213040302" group-title="Local",Pinoy Xtream
 http:/136.239.158.18:6610/001/2/ch00000090990000001098/sec-f2-v1-a1.m3u8?JITPDRMType=NO&IASHttpSessionId=OTT50162920260525065406077763&AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMApC219uqwL0dVmslrkAjamFsyK4TH4mOENKJ45mwOyS0g%3D%3D&m3u8_level=2&virtualDomain=001.live_hls.zte.com&ispcode=55&ztecid=ch00000090990000001098
@@ -1108,7 +1141,7 @@ https://amg15905-k20-amg15905c3-lg-au-5401.playouts.now.amagi.tv/playlist/amg159
 http://tv-premium-pro.com/live/wezqqszfr2/i7481xvrdf/1776202.m3u8
 
 #EXTINF:0 CUID="379" tvg-name="TSN1" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11182_dark_360w_270h.png" group-title="Sports",TSN1
-http://103.205.133.70/tsn1/tracks-v1a1/mono.ts.m3u8
+http://restream-live.realiptv.to:8080/monstercable/Dq6jjknxCr/3146
 
 #EXTINF:0 CUID="380" tvg-name="TSN2" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11182_dark_360w_270h.png" group-title="Sports",TSN2
 http://103.205.133.70/tsn2/tracks-v1a1/mono.ts.m3u8
@@ -1119,10 +1152,10 @@ http://103.205.133.70/tsn3/index.m3u8
 #EXTINF:0 CUID="382" tvg-name="TV Maria" tvg-id="TV Maria" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/29/Maria_TV.png/revision/latest?cb=20200414213815" group-title="Local",TV Maria
 http://136.158.97.2:6610/001/2/ch00000090990000001160/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BqJiJmfV%2B93mjmGGmqynSohytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001374&contentid=ch00000000000000001374&videoid=ch00000090990000001160&recommendtype=0&userid=1605694488407&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=G669IAJA55PXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
 
-#EXTINF:0 CUID="383" tvg-name="TV5 HD" tvg-logo="https://static.wikia.nocookie.net/russel/images/7/7a/TV5_HD_Logo_2024.png/revision/latest/scale-to-width-down/290?cb=20240202141126" group-title="Local",TV5 HD
+#EXTINF:0 CUID="383" tvg-name="TV5 HD" tvg-logo="https://static.wikia.nocookie.net/russel/images/7/7a/TV5_HD_Logo_2024.png/revision/latest/scale-to-width-down/290?cb=20240202141126" group-title="Local" tvg-id="11984",TV5 HD
 http://136.239.158.30:6610/001/2/ch00000090990000001088/index.m3u8?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2Boh0xOsaoSFLqA0PEh9gVjiytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001213&contentid=ch00000000000000001213&videoid=ch00000090990000001088&recommendtype=0&userid=1150006064464&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=J62NMXIGLTMXXX&NeedJITP=1&JITPMediaType=HLS&JITPDRMType=NO
 
-#EXTINF:0 CUID="384" tvg-name="TV5 HD +" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/tv5-ph.png" group-title="Local",TV5 HD +
+#EXTINF:0 CUID="384" tvg-name="TV5 HD +" tvg-logo="https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/philippines/tv5-ph.png" group-title="Local" tvg-id="11984",TV5 HD +
 http://136.158.97.2:6610/001/2/ch00000090990000001088/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20TsXah2%2FZLFNNIdWrVrXDMAoh0xOsaoSFLqA0PEh9gVjisyK4TH4mOENKJ45mwOyS0g%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001213&contentid=ch00000000000000001213&videoid=ch00000090990000001088&recommendtype=0&userid=1099183361159&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=ZRUDOFEVUJOXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO&IASHttpSessionId=RR20448320260101155237311409&ispcode=55
 
 #EXTINF:0 CUID="385" tvg-name="TV5 MONDE Asie" tvg-id="MONDE Asie" tvg-logo="https://apac.tv5monde.com/ios.png" group-title="Entertainment",TV5 MONDE Asie
@@ -1184,6 +1217,9 @@ http://23.237.104.106:8080/USA_VH1/index.m3u8
 
 #EXTINF:0 CUID="404" tvg-name="VICE TV" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/fb/Syfy_%282017%29.svg/revision/latest/scale-to-width-down/300?cb=20171210093256" group-title="Entertainment",VICE TV
 http://23.237.104.106:8080/USA_VICETV/index.m3u8?takodachi
+
+#EXTINF:0 CUID="416" tvg-name="Z Nation" tvg-id="" tvg-logo="" group-title="Korea", Viu Tv
+https://cdn.163189.xyz/163189/viu
 
 #EXTINF:0 CUID="405" tvg-name="Viva Cinema" tvg-logo="https://static.wikia.nocookie.net/tvfanon6528/images/2/2f/Viva_Cinema_%282021-.n.v.%29.png/revision/latest?cb=20210804092616" group-title="Movies",Viva Cinema
 http://136.239.158.18:6610/001/2/ch00000090990000001079/index.m3u8?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BoglCgy7TAZamPXsCV8PgebytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001138&contentid=ch00000000000000001138&videoid=ch00000090990000001079&recommendtype=0&userid=1897516127558&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=1Z8S6AOLQ8XXXX&NeedJITP=1&JITPMediaType=HLS&JITPDRMType=NO
