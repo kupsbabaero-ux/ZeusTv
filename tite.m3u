@@ -1149,6 +1149,9 @@ http://103.205.133.70/tsn2/tracks-v1a1/mono.ts.m3u8
 #EXTINF:0 CUID="381" tvg-name="TSN3" tvg-logo="http://schedulesdirect-api20141201-logos.s3.dualstack.us-east-1.amazonaws.com/stationLogos/s11182_dark_360w_270h.png" group-title="Sports",TSN3
 http://103.205.133.70/tsn3/index.m3u8
 
+#EXTINF:0 CUID="414" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/94/Tvglobo_logo_2021.png" group-title="Sports", Tv Globo (FIFAWCP)
+http://dns.fontedecanais.com.br:80//live/playercodestv/947942/395.ts
+
 #EXTINF:0 CUID="382" tvg-name="TV Maria" tvg-id="TV Maria" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/2/29/Maria_TV.png/revision/latest?cb=20200414213815" group-title="Local",TV Maria
 http://136.158.97.2:6610/001/2/ch00000090990000001160/manifest.mpd?AuthInfo=v87HD9rEhwHiAdYyrP20Tg5pgSMSITY%2FHYvvCWJRp%2BqJiJmfV%2B93mjmGGmqynSohytokK1MIobcue1ImXa0ZEA%3D%3D&version=v1.0&BreakPoint=0&virtualDomain=001.live_hls.zte.com&programid=ch00000000000000001374&contentid=ch00000000000000001374&videoid=ch00000090990000001160&recommendtype=0&userid=1605694488407&boid=001&stbid=02%3A00%3A00%3A00%3A00%3A00&terminalflag=1&profilecode=&usersessionid=G669IAJA55PXXX&NeedJITP=1&JITPMediaType=DASH&JITPDRMType=NO
 
