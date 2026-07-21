@@ -4,7 +4,7 @@
     
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>ZEUSTV</title>
+  <title>ZEUSTV2</title>
   
   <script src="hls.js"></script>
   
@@ -924,6 +924,15 @@
         "https://iptv-epg.org/files/epg-au.xml"
       ];
 
+      // Universal CORS Proxy Fallback engine for HTTP streams on HTTPS Vercel
+      function getProxiedUrl(targetUrl) {
+        if (!targetUrl) return '';
+        if (targetUrl.startsWith('http://')) {
+          return 'https://api.allorigins.win/raw?url=' + encodeURIComponent(targetUrl);
+        }
+        return targetUrl;
+      }
+
       let channelData = [];
       let uniqueCategories = [];
       let activeCategoryFilter = "ALL_CHANNELS_FILTER";
@@ -1057,7 +1066,7 @@
       }
 
       async function fetchAllXmlGuides() {
-        const proxyUrl = "/api/proxy?url=";
+        const proxyUrl = "https://api.allorigins.win/raw?url=";
         const parser = new DOMParser();
 
         for (let url of EPG_URLS) {
@@ -1144,13 +1153,8 @@
             } else if (line.startsWith('http') && activeRecord) {
               activeRecord.url = line;
               
-              const isLiveServer = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost";
-              if (isLiveServer) {
-                activeRecord.proxyUrl = line; 
-              } else {
-                // Vercel Serverless Proxy Route
-                activeRecord.proxyUrl = `/api/proxy?url=${encodeURIComponent(line)}`;
-              }
+              // Direct Proxy Resolver Logic for Mixed-Content Mitigation
+              activeRecord.proxyUrl = getProxiedUrl(line);
 
               channelData.push(activeRecord);
               activeRecord = null;
@@ -1354,7 +1358,13 @@
             liveMaxLatencyDurationCount: 8,  
             maxBufferHole: 0.5,              
             nudgeMaxRetries: 10,             
-            nudgeDelay: 0.2
+            nudgeDelay: 0.2,
+            // HLS.js custom loader to intercept TS chunks and bypass HTTP/HTTPS restrictions dynamically
+            xhrSetup: function (xhr, url) {
+              if (url.startsWith('http://')) {
+                xhr.open('GET', getProxiedUrl(url), true);
+              }
+            }
           });
           
           hlsInstance.loadSource(channel.proxyUrl);
