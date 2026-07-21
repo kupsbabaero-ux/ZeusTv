@@ -1057,7 +1057,7 @@
       }
 
       async function fetchAllXmlGuides() {
-        const proxyUrl = "https://api.allorigins.win/raw?url=";
+        const proxyUrl = "/api/proxy?url=";
         const parser = new DOMParser();
 
         for (let url of EPG_URLS) {
@@ -1148,8 +1148,8 @@
               if (isLiveServer) {
                 activeRecord.proxyUrl = line; 
               } else {
-                const strippedUrl = line.replace(/^https?:\/\//, '');
-                activeRecord.proxyUrl = `/stream-proxy/${strippedUrl}`;
+                // Vercel Serverless Proxy Route
+                activeRecord.proxyUrl = `/api/proxy?url=${encodeURIComponent(line)}`;
               }
 
               channelData.push(activeRecord);
